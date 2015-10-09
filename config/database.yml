@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: site_analysis_api_development
+  pool: 5
+  username: knoxjeffrey
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: site_analysis_api_test
+  pool: 5
+  username: knoxjeffrey
+  password:
