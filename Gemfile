@@ -16,8 +16,6 @@ gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   gem 'byebug'
-  gem 'fabrication'
-  gem 'faker', '~> 1.4.3'
   gem 'rspec-rails', '~> 3.1'
 end
 
@@ -25,6 +23,13 @@ group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'web-console', '~> 2.0'
+end
+
+group :test do
+  gem 'database_cleaner', '1.2.0'
+  gem 'fabrication'
+  gem 'faker', '~> 1.4.3'
+  gem 'shoulda-matchers', '~> 3.0'
 end
 
 
