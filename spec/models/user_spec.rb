@@ -6,6 +6,9 @@ describe User do
 
   subject { user }
 
+  it { should have_many :user_projects}
+  it { should have_many(:projects).through(:user_projects) }
+
   it { should be_valid }
   it { should respond_to(:email) }
   it { should respond_to(:password) }
