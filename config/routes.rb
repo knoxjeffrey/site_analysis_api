@@ -7,9 +7,10 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  namespace :api do
+  namespace :api, defaults: { format: :json }, path: '/' do
 
-    namespace :v1, defaults: { format: :json } do
+    scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+
       get 'users/sync', to: 'users#sync'
 
       resources :projects, only: [:create, :show]
@@ -18,8 +19,5 @@ Rails.application.routes.draw do
     end
 
   end
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
 end
