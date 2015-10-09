@@ -27,6 +27,10 @@ describe Api::V1::ProjectsController do
         expect(project_response[:admin_id]).to eq user.id
       end
 
+      it "returns a 201 response code" do
+        expect(response.code).to eq("201")
+      end
+
     end
 
     context "with an invalid access token" do
@@ -38,6 +42,12 @@ describe Api::V1::ProjectsController do
         post :create, project: Fabricate.attributes_for(:project), format: :json
         expect(Project.count).to eq(0)
       end
+
+      it "returns a 401 response code" do
+        post :create, project: Fabricate.attributes_for(:project), format: :json
+        expect(response.code).to eq("401")
+      end
+
 
     end
 
