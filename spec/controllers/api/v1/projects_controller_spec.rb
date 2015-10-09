@@ -13,22 +13,44 @@ describe Api::V1::ProjectsController do
       let(:token) { double :acceptable? => true, :scopes => [:api],
                     :resource_owner_id => user.id }
 
-      before do
-        allow(controller).to receive(:doorkeeper_token) {token}
-        post :create, project: Fabricate.attributes_for(:project), format: :json
+      context "with valid input for the project name" do
+
+        before do
+          allow(controller).to receive(:doorkeeper_token) {token}
+          post :create, project: Fabricate.attributes_for(:project), format: :json
+        end
+
+        it "creates a new project" do
+          expect(Project.count).to eq(1)
+        end
+
+        it "creates a new project associated with the user" do
+          project_response = JSON.parse(response.body, symbolize_names: true)
+          expect(project_response[:admin_id]).to eq user.id
+        end
+
+        it "returns a 201 response code" do
+          expect(response.code).to eq("201")
+        end
+
       end
 
-      it "creates a new project" do
-        expect(Project.count).to eq(1)
-      end
+      context "with invalid input for the project name" do
+        before do
+          allow(controller).to receive(:doorkeeper_token) {token}
+          post :create, project: Fabricate.attributes_for(:project, project_name: "a"),
+            format: :json
+        end
 
-      it "creates a new project associated with the user" do
-        project_response = JSON.parse(response.body, symbolize_names: true)
-        expect(project_response[:admin_id]).to eq user.id
-      end
+        it "returns an error message" do
+          project_response = JSON.parse(response.body, symbolize_names: true)
+          expect(project_response[:errors]).not_to be nil
+        end
 
-      it "returns a 201 response code" do
-        expect(response.code).to eq("201")
+        it "returns a 422 response code" do
+          expect(response.code).to eq("422")
+        end
+
       end
 
     end
@@ -47,7 +69,6 @@ describe Api::V1::ProjectsController do
         post :create, project: Fabricate.attributes_for(:project), format: :json
         expect(response.code).to eq("401")
       end
-
 
     end
 
