@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 13 Oct 2015 12:59:06 GMT
+      - Tue, 13 Oct 2015 14:33:34 GMT
       Date:
-      - Tue, 13 Oct 2015 12:58:36 GMT
+      - Tue, 13 Oct 2015 14:33:04 GMT
       Cache-Control:
       - public, max-age=30, must-revalidate, no-transform
       Etag:
-      - '"w_LpEypgYV3U0EwZV3kjSMfMolg/-VL3Kr8BkcqjTmdCKoRp333Vwkc"'
+      - '"w_LpEypgYV3U0EwZV3kjSMfMolg/PJBd5WaTJJhls9EmWBGrwYCo8M0"'
       Vary:
       - Origin
       - X-Origin
@@ -48,7 +48,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"kind":"pagespeedonline#result","id":"http://www.tamars.co.uk/","responseCode":200,"title":"21st
-        Century Back Care - TAMARS Treatment","ruleGroups":{"SPEED":{"score":68},"USABILITY":{"score":100}},"pageStats":{"numberResources":77,"numberHosts":13,"totalRequestBytes":"8860","numberStaticResources":62,"htmlResponseBytes":"46318","cssResponseBytes":"726399","imageResponseBytes":"197115","javascriptResponseBytes":"1754799","otherResponseBytes":"434940","numberJsResources":32,"numberCssResources":19},"formattedResults":{"locale":"en_US","ruleResults":{"AvoidInterstitials":{"localizedRuleName":"Avoid
+        Century Back Care - TAMARS Treatment","ruleGroups":{"SPEED":{"score":66},"USABILITY":{"score":100}},"pageStats":{"numberResources":77,"numberHosts":13,"totalRequestBytes":"8863","numberStaticResources":62,"htmlResponseBytes":"46393","cssResponseBytes":"726399","imageResponseBytes":"197115","javascriptResponseBytes":"1754799","otherResponseBytes":"434941","numberJsResources":32,"numberCssResources":19},"formattedResults":{"locale":"en_US","ruleResults":{"AvoidInterstitials":{"localizedRuleName":"Avoid
         app install interstitials that hide content","ruleImpact":0.0,"groups":["USABILITY"],"summary":{"format":"Your
         page does not appear to have any app install interstitials that hide a significant
         amount of content. Learn more about the importance of {{BEGIN_LINK}}avoiding
@@ -75,11 +75,11 @@ http_interactions:
         minutes"}]}},{"result":{"format":"{{URL}} ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"http://dnn506yrbagrg.cloudfront.net/pages/scripts/0012/8531.js"},{"type":"DURATION","key":"LIFETIME","value":"60
         minutes"}]}},{"result":{"format":"{{URL}} ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"http://www.google-analytics.com/ga.js"},{"type":"DURATION","key":"LIFETIME","value":"2
         hours"}]}}]}]},"MainResourceServerResponseTime":{"localizedRuleName":"Reduce
-        server response time","ruleImpact":20.22,"groups":["SPEED"],"urlBlocks":[{"header":{"format":"In
+        server response time","ruleImpact":24.12,"groups":["SPEED"],"urlBlocks":[{"header":{"format":"In
         our test, your server responded in {{RESPONSE_TIME}}. There are many factors
         that can slow down your server response time. {{BEGIN_LINK}}Please read our
         recommendations{{END_LINK}} to learn how you can monitor and measure where
-        your server is spending the most time.","args":[{"type":"DURATION","key":"RESPONSE_TIME","value":"1.5
+        your server is spending the most time.","args":[{"type":"DURATION","key":"RESPONSE_TIME","value":"1.8
         seconds"},{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/Server"}]}}]},"MinifyCss":{"localizedRuleName":"Minify
         CSS","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your CSS is
         minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/MinifyResources"}]}},"MinifyHTML":{"localizedRuleName":"Minify
@@ -125,7 +125,7 @@ http_interactions:
         text on your page is legible. Learn more about {{BEGIN_LINK}}using legible
         font sizes{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/UseLegibleFontSizes"}]}}}},"version":{"major":1,"minor":15}}'
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 12:58:36 GMT
+  recorded_at: Tue, 13 Oct 2015 14:33:04 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/pagespeedonline/v2/runPagespeed?key=AIzaSyCBds3tXDhQDSik02PVa3Y8-MBw47Z0uMs&prettyprint=false&strategy=desktop&url=http://tamars.co.uk
@@ -145,13 +145,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 13 Oct 2015 12:59:10 GMT
+      - Tue, 13 Oct 2015 14:33:38 GMT
       Date:
-      - Tue, 13 Oct 2015 12:58:40 GMT
+      - Tue, 13 Oct 2015 14:33:08 GMT
       Cache-Control:
       - public, max-age=30, must-revalidate, no-transform
       Etag:
-      - '"w_LpEypgYV3U0EwZV3kjSMfMolg/K5ygNHqxkbweB-tm_77M5VbdKiM"'
+      - '"w_LpEypgYV3U0EwZV3kjSMfMolg/ZTECmnToBCNi5fF034sDP5sF8ME"'
       Vary:
       - Origin
       - X-Origin
@@ -174,7 +174,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"kind":"pagespeedonline#result","id":"http://www.tamars.co.uk/","responseCode":200,"title":"21st
-        Century Back Care - TAMARS Treatment","ruleGroups":{"SPEED":{"score":86}},"pageStats":{"numberResources":76,"numberHosts":12,"totalRequestBytes":"8780","numberStaticResources":62,"htmlResponseBytes":"47053","cssResponseBytes":"709703","imageResponseBytes":"197115","javascriptResponseBytes":"1754002","otherResponseBytes":"532058","numberJsResources":31,"numberCssResources":19},"formattedResults":{"locale":"en_US","ruleResults":{"AvoidLandingPageRedirects":{"localizedRuleName":"Avoid
+        Century Back Care - TAMARS Treatment","ruleGroups":{"SPEED":{"score":85}},"pageStats":{"numberResources":76,"numberHosts":12,"totalRequestBytes":"8779","numberStaticResources":62,"htmlResponseBytes":"47301","cssResponseBytes":"709703","imageResponseBytes":"197115","javascriptResponseBytes":"1754002","otherResponseBytes":"532054","numberJsResources":31,"numberCssResources":19},"formattedResults":{"locale":"en_US","ruleResults":{"AvoidLandingPageRedirects":{"localizedRuleName":"Avoid
         landing page redirects","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your
         page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page
         redirects{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/AvoidRedirects"}]}},"EnableGzipCompression":{"localizedRuleName":"Enable
@@ -189,11 +189,11 @@ http_interactions:
         minutes"}]}},{"result":{"format":"{{URL}} ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"http://dnn506yrbagrg.cloudfront.net/pages/scripts/0012/8531.js"},{"type":"DURATION","key":"LIFETIME","value":"60
         minutes"}]}},{"result":{"format":"{{URL}} ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"http://www.google-analytics.com/ga.js"},{"type":"DURATION","key":"LIFETIME","value":"2
         hours"}]}}]}]},"MainResourceServerResponseTime":{"localizedRuleName":"Reduce
-        server response time","ruleImpact":5.43,"groups":["SPEED"],"urlBlocks":[{"header":{"format":"In
+        server response time","ruleImpact":5.97,"groups":["SPEED"],"urlBlocks":[{"header":{"format":"In
         our test, your server responded in {{RESPONSE_TIME}}. There are many factors
         that can slow down your server response time. {{BEGIN_LINK}}Please read our
         recommendations{{END_LINK}} to learn how you can monitor and measure where
-        your server is spending the most time.","args":[{"type":"DURATION","key":"RESPONSE_TIME","value":"0.74
+        your server is spending the most time.","args":[{"type":"DURATION","key":"RESPONSE_TIME","value":"0.80
         seconds"},{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/Server"}]}}]},"MinifyCss":{"localizedRuleName":"Minify
         CSS","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your CSS is
         minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/MinifyResources"}]}},"MinifyHTML":{"localizedRuleName":"Minify
@@ -230,5 +230,5 @@ http_interactions:
         have the above-the-fold content properly prioritized. Learn more about {{BEGIN_LINK}}prioritizing
         visible content{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"}]}}}},"version":{"major":1,"minor":15}}'
     http_version: 
-  recorded_at: Tue, 13 Oct 2015 12:58:40 GMT
+  recorded_at: Tue, 13 Oct 2015 14:33:08 GMT
 recorded_with: VCR 2.9.3

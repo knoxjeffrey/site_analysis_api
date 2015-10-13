@@ -24,7 +24,7 @@ module Api
           site_analysis_array = page_speed_api_client.create_page_speed_insight(web_address, strategies_selected)
           store_results(site_analysis_array)
 
-          render json: @project.page_speed_results, status: 201
+          render json: site_analysis_array, status: 201
         else
           render json: { errors: parse_error(@page_speed_form.errors) }, status: 422
         end
