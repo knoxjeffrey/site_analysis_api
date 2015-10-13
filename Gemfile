@@ -30,6 +30,8 @@ group :test do
   gem 'fabrication'
   gem 'faker', '~> 1.4.3'
   gem 'shoulda-matchers', '~> 3.0'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 

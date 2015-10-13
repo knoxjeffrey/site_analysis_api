@@ -1,0 +1,234 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/pagespeedonline/v2/runPagespeed?key=AIzaSyCBds3tXDhQDSik02PVa3Y8-MBw47Z0uMs&prettyprint=false&strategy=mobile&url=http://tamars.co.uk
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 13 Oct 2015 12:59:06 GMT
+      Date:
+      - Tue, 13 Oct 2015 12:58:36 GMT
+      Cache-Control:
+      - public, max-age=30, must-revalidate, no-transform
+      Etag:
+      - '"w_LpEypgYV3U0EwZV3kjSMfMolg/-VL3Kr8BkcqjTmdCKoRp333Vwkc"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '16366'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; p="1"; ma=604800
+    body:
+      encoding: UTF-8
+      string: '{"kind":"pagespeedonline#result","id":"http://www.tamars.co.uk/","responseCode":200,"title":"21st
+        Century Back Care - TAMARS Treatment","ruleGroups":{"SPEED":{"score":68},"USABILITY":{"score":100}},"pageStats":{"numberResources":77,"numberHosts":13,"totalRequestBytes":"8860","numberStaticResources":62,"htmlResponseBytes":"46318","cssResponseBytes":"726399","imageResponseBytes":"197115","javascriptResponseBytes":"1754799","otherResponseBytes":"434940","numberJsResources":32,"numberCssResources":19},"formattedResults":{"locale":"en_US","ruleResults":{"AvoidInterstitials":{"localizedRuleName":"Avoid
+        app install interstitials that hide content","ruleImpact":0.0,"groups":["USABILITY"],"summary":{"format":"Your
+        page does not appear to have any app install interstitials that hide a significant
+        amount of content. Learn more about the importance of {{BEGIN_LINK}}avoiding
+        the use of app install interstitials{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/webmasters/mobile-sites/mobile-seo/common-mistakes/avoid-interstitials"}]}},"AvoidLandingPageRedirects":{"localizedRuleName":"Avoid
+        landing page redirects","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your
+        page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page
+        redirects{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/AvoidRedirects"}]}},"AvoidPlugins":{"localizedRuleName":"Avoid
+        plugins","ruleImpact":0.0,"groups":["USABILITY"],"summary":{"format":"Your
+        page does not appear to use plugins, which would prevent content from being
+        usable on many platforms. Learn more about the importance of {{BEGIN_LINK}}avoiding
+        plugins{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/AvoidPlugins"}]}},"ConfigureViewport":{"localizedRuleName":"Configure
+        the viewport","ruleImpact":0.0,"groups":["USABILITY"],"summary":{"format":"Your
+        page specifies a viewport matching the device''s size, which allows it to
+        render properly on all devices. Learn more about {{BEGIN_LINK}}configuring
+        viewports{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/ConfigureViewport"}]}},"EnableGzipCompression":{"localizedRuleName":"Enable
+        compression","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"You
+        have compression enabled. Learn more about {{BEGIN_LINK}}enabling compression{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/EnableCompression"}]}},"LeverageBrowserCaching":{"localizedRuleName":"Leverage
+        browser caching","ruleImpact":2.2354910714285716,"groups":["SPEED"],"summary":{"format":"Setting
+        an expiry date or a maximum age in the HTTP headers for static resources instructs
+        the browser to load previously downloaded resources from local disk rather
+        than over the network."},"urlBlocks":[{"header":{"format":"{{BEGIN_LINK}}Leverage
+        browser caching{{END_LINK}} for the following cacheable resources:","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"}]},"urls":[{"result":{"format":"{{URL}}
+        ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"https://static.doubleclick.net/instream/ad_status.js"},{"type":"DURATION","key":"LIFETIME","value":"15
+        minutes"}]}},{"result":{"format":"{{URL}} ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"http://dnn506yrbagrg.cloudfront.net/pages/scripts/0012/8531.js"},{"type":"DURATION","key":"LIFETIME","value":"60
+        minutes"}]}},{"result":{"format":"{{URL}} ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"http://www.google-analytics.com/ga.js"},{"type":"DURATION","key":"LIFETIME","value":"2
+        hours"}]}}]}]},"MainResourceServerResponseTime":{"localizedRuleName":"Reduce
+        server response time","ruleImpact":20.22,"groups":["SPEED"],"urlBlocks":[{"header":{"format":"In
+        our test, your server responded in {{RESPONSE_TIME}}. There are many factors
+        that can slow down your server response time. {{BEGIN_LINK}}Please read our
+        recommendations{{END_LINK}} to learn how you can monitor and measure where
+        your server is spending the most time.","args":[{"type":"DURATION","key":"RESPONSE_TIME","value":"1.5
+        seconds"},{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/Server"}]}}]},"MinifyCss":{"localizedRuleName":"Minify
+        CSS","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your CSS is
+        minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/MinifyResources"}]}},"MinifyHTML":{"localizedRuleName":"Minify
+        HTML","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your HTML is
+        minified. Learn more about {{BEGIN_LINK}}minifying HTML{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/MinifyResources"}]}},"MinifyJavaScript":{"localizedRuleName":"Minify
+        JavaScript","ruleImpact":0.5492,"groups":["SPEED"],"summary":{"format":"Compacting
+        JavaScript code can save many bytes of data and speed up downloading, parsing,
+        and execution time."},"urlBlocks":[{"header":{"format":"{{BEGIN_LINK}}Minify
+        JavaScript{{END_LINK}} for the following resources to reduce their size by
+        {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/MinifyResources"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"3.5KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"1%"}]},"urls":[{"result":{"format":"Minifying
+        {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction) after compression.","args":[{"type":"URL","key":"URL","value":"https://s.ytimg.com/yts/jsbin/html5player-new-en_GB-vflmdFuIW/html5player-new.js"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"2.5KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"1%"}]}},{"result":{"format":"Minifying
+        {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction) after compression.","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?ver=4.0.1"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"998B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"17%"}]}}]}]},"MinimizeRenderBlockingResources":{"localizedRuleName":"Eliminate
+        render-blocking JavaScript and CSS in above-the-fold content","ruleImpact":24.0,"groups":["SPEED"],"summary":{"format":"Your
+        page has {{NUM_SCRIPTS}} blocking script resources and {{NUM_CSS}} blocking
+        CSS resources. This causes a delay in rendering your page.","args":[{"type":"INT_LITERAL","key":"NUM_SCRIPTS","value":"5"},{"type":"INT_LITERAL","key":"NUM_CSS","value":"17"}]},"urlBlocks":[{"header":{"format":"None
+        of the above-the-fold content on your page could be rendered without waiting
+        for the following resources to load. Try to defer or asynchronously load blocking
+        resources, or inline the critical portions of those resources directly in
+        the HTML."}},{"header":{"format":"{{BEGIN_LINK}}Remove render-blocking JavaScript{{END_LINK}}:","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/BlockingJS"}]},"urls":[{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-includes/js/jquery/jquery.js?ver=1.11.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/maxbuttons-pro/js/maxbuttons.js?ver=4.0.1"}]}}]},{"header":{"format":"{{BEGIN_LINK}}Optimize
+        CSS Delivery{{END_LINK}} of the following:","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery"}]},"urls":[{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/bootstrap.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/bootstrap-responsive.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/docs.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/js/google-code-prettify/prettify.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/nivo/nivo-slider.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/prettyPhoto.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/wpsocialite/lib/wpsocialite.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/page_builder/js_composer/assets/bootstrap/css/bootstrap.css?ver=3.3.2"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/page_builder/js_composer/assets/css/js_composer_front.css?ver=3.3.2"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/options.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/admin/layouts/cyan.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.9.3"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/css/captions.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/plugins/css3_web_pricing_tables_grids/table1/css3_grid_style.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/plugins/css3_web_pricing_tables_grids/table2/css3_grid_style.css?ver=4.0.1"}]}}]}]},"OptimizeImages":{"localizedRuleName":"Optimize
+        images","ruleImpact":1.3283,"groups":["SPEED"],"summary":{"format":"Properly
+        formatting and compressing images can save many bytes of data."},"urlBlocks":[{"header":{"format":"{{BEGIN_LINK}}Optimize
+        the following images{{END_LINK}} to reduce their size by {{SIZE_IN_BYTES}}
+        ({{PERCENTAGE}} reduction).","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/OptimizeImages"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"12.9KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"40%"}]},"urls":[{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/wpsocialite/lib/social-sprite.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"4KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"37%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://tamars.co.uk/wp/wp-content/uploads/2012/10/spine.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"3.5KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"51%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://tamars.co.uk/wp/wp-content/uploads/2012/10/21_C_Logo1-300x50.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"1.7KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"20%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/img/icons_facebook.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"866B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"76%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/img/icons_google.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"824B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"66%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/img/icons_twitter.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"814B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"64%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://tamars.co.uk/wp/wp-content/uploads/2012/09/email.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"655B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"42%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://tamars.co.uk/wp/wp-content/uploads/2012/09/specialoffer.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"567B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"35%"}]}}]}]},"PrioritizeVisibleContent":{"localizedRuleName":"Prioritize
+        visible content","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"You
+        have the above-the-fold content properly prioritized. Learn more about {{BEGIN_LINK}}prioritizing
+        visible content{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"}]}},"SizeContentToViewport":{"localizedRuleName":"Size
+        content to viewport","ruleImpact":0.0,"groups":["USABILITY"],"summary":{"format":"The
+        contents of your page fit within the viewport. Learn more about {{BEGIN_LINK}}sizing
+        content to the viewport{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/SizeContentToViewport"}]}},"SizeTapTargetsAppropriately":{"localizedRuleName":"Size
+        tap targets appropriately","ruleImpact":0.0,"groups":["USABILITY"],"summary":{"format":"All
+        of your page''s links/buttons are large enough for a user to easily tap on
+        a touchscreen. Learn more about {{BEGIN_LINK}}sizing tap targets appropriately{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/SizeTapTargetsAppropriately"}]}},"UseLegibleFontSizes":{"localizedRuleName":"Use
+        legible font sizes","ruleImpact":0.0,"groups":["USABILITY"],"summary":{"format":"The
+        text on your page is legible. Learn more about {{BEGIN_LINK}}using legible
+        font sizes{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/UseLegibleFontSizes"}]}}}},"version":{"major":1,"minor":15}}'
+    http_version: 
+  recorded_at: Tue, 13 Oct 2015 12:58:36 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/pagespeedonline/v2/runPagespeed?key=AIzaSyCBds3tXDhQDSik02PVa3Y8-MBw47Z0uMs&prettyprint=false&strategy=desktop&url=http://tamars.co.uk
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 13 Oct 2015 12:59:10 GMT
+      Date:
+      - Tue, 13 Oct 2015 12:58:40 GMT
+      Cache-Control:
+      - public, max-age=30, must-revalidate, no-transform
+      Etag:
+      - '"w_LpEypgYV3U0EwZV3kjSMfMolg/K5ygNHqxkbweB-tm_77M5VbdKiM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '13772'
+      Server:
+      - GSE
+      Alternate-Protocol:
+      - 443:quic,p=1
+      Alt-Svc:
+      - quic=":443"; p="1"; ma=604800
+    body:
+      encoding: UTF-8
+      string: '{"kind":"pagespeedonline#result","id":"http://www.tamars.co.uk/","responseCode":200,"title":"21st
+        Century Back Care - TAMARS Treatment","ruleGroups":{"SPEED":{"score":86}},"pageStats":{"numberResources":76,"numberHosts":12,"totalRequestBytes":"8780","numberStaticResources":62,"htmlResponseBytes":"47053","cssResponseBytes":"709703","imageResponseBytes":"197115","javascriptResponseBytes":"1754002","otherResponseBytes":"532058","numberJsResources":31,"numberCssResources":19},"formattedResults":{"locale":"en_US","ruleResults":{"AvoidLandingPageRedirects":{"localizedRuleName":"Avoid
+        landing page redirects","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your
+        page has no redirects. Learn more about {{BEGIN_LINK}}avoiding landing page
+        redirects{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/AvoidRedirects"}]}},"EnableGzipCompression":{"localizedRuleName":"Enable
+        compression","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"You
+        have compression enabled. Learn more about {{BEGIN_LINK}}enabling compression{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/EnableCompression"}]}},"LeverageBrowserCaching":{"localizedRuleName":"Leverage
+        browser caching","ruleImpact":1.490327380952381,"groups":["SPEED"],"summary":{"format":"Setting
+        an expiry date or a maximum age in the HTTP headers for static resources instructs
+        the browser to load previously downloaded resources from local disk rather
+        than over the network."},"urlBlocks":[{"header":{"format":"{{BEGIN_LINK}}Leverage
+        browser caching{{END_LINK}} for the following cacheable resources:","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"}]},"urls":[{"result":{"format":"{{URL}}
+        ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"https://static.doubleclick.net/instream/ad_status.js"},{"type":"DURATION","key":"LIFETIME","value":"15
+        minutes"}]}},{"result":{"format":"{{URL}} ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"http://dnn506yrbagrg.cloudfront.net/pages/scripts/0012/8531.js"},{"type":"DURATION","key":"LIFETIME","value":"60
+        minutes"}]}},{"result":{"format":"{{URL}} ({{LIFETIME}})","args":[{"type":"URL","key":"URL","value":"http://www.google-analytics.com/ga.js"},{"type":"DURATION","key":"LIFETIME","value":"2
+        hours"}]}}]}]},"MainResourceServerResponseTime":{"localizedRuleName":"Reduce
+        server response time","ruleImpact":5.43,"groups":["SPEED"],"urlBlocks":[{"header":{"format":"In
+        our test, your server responded in {{RESPONSE_TIME}}. There are many factors
+        that can slow down your server response time. {{BEGIN_LINK}}Please read our
+        recommendations{{END_LINK}} to learn how you can monitor and measure where
+        your server is spending the most time.","args":[{"type":"DURATION","key":"RESPONSE_TIME","value":"0.74
+        seconds"},{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/Server"}]}}]},"MinifyCss":{"localizedRuleName":"Minify
+        CSS","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your CSS is
+        minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/MinifyResources"}]}},"MinifyHTML":{"localizedRuleName":"Minify
+        HTML","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"Your HTML is
+        minified. Learn more about {{BEGIN_LINK}}minifying HTML{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/MinifyResources"}]}},"MinifyJavaScript":{"localizedRuleName":"Minify
+        JavaScript","ruleImpact":0.5492,"groups":["SPEED"],"summary":{"format":"Compacting
+        JavaScript code can save many bytes of data and speed up downloading, parsing,
+        and execution time."},"urlBlocks":[{"header":{"format":"{{BEGIN_LINK}}Minify
+        JavaScript{{END_LINK}} for the following resources to reduce their size by
+        {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/MinifyResources"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"3.5KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"1%"}]},"urls":[{"result":{"format":"Minifying
+        {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction) after compression.","args":[{"type":"URL","key":"URL","value":"https://s.ytimg.com/yts/jsbin/html5player-new-en_GB-vflmdFuIW/html5player-new.js"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"2.5KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"1%"}]}},{"result":{"format":"Minifying
+        {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction) after compression.","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?ver=4.0.1"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"998B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"17%"}]}}]}]},"MinimizeRenderBlockingResources":{"localizedRuleName":"Eliminate
+        render-blocking JavaScript and CSS in above-the-fold content","ruleImpact":6.0,"groups":["SPEED"],"summary":{"format":"Your
+        page has {{NUM_SCRIPTS}} blocking script resources and {{NUM_CSS}} blocking
+        CSS resources. This causes a delay in rendering your page.","args":[{"type":"INT_LITERAL","key":"NUM_SCRIPTS","value":"5"},{"type":"INT_LITERAL","key":"NUM_CSS","value":"17"}]},"urlBlocks":[{"header":{"format":"None
+        of the above-the-fold content on your page could be rendered without waiting
+        for the following resources to load. Try to defer or asynchronously load blocking
+        resources, or inline the critical portions of those resources directly in
+        the HTML."}},{"header":{"format":"{{BEGIN_LINK}}Remove render-blocking JavaScript{{END_LINK}}:","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/BlockingJS"}]},"urls":[{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-includes/js/jquery/jquery.js?ver=1.11.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/maxbuttons-pro/js/maxbuttons.js?ver=4.0.1"}]}}]},{"header":{"format":"{{BEGIN_LINK}}Optimize
+        CSS Delivery{{END_LINK}} of the following:","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery"}]},"urls":[{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/bootstrap.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/bootstrap-responsive.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/docs.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/js/google-code-prettify/prettify.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/nivo/nivo-slider.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/prettyPhoto.css"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/wpsocialite/lib/wpsocialite.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/page_builder/js_composer/assets/bootstrap/css/bootstrap.css?ver=3.3.2"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/page_builder/js_composer/assets/css/js_composer_front.css?ver=3.3.2"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/css/options.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/admin/layouts/cyan.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=3.9.3"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/revslider/rs-plugin/css/captions.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/plugins/css3_web_pricing_tables_grids/table1/css3_grid_style.css?ver=4.0.1"}]}},{"result":{"format":"{{URL}}","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/plugins/css3_web_pricing_tables_grids/table2/css3_grid_style.css?ver=4.0.1"}]}}]}]},"OptimizeImages":{"localizedRuleName":"Optimize
+        images","ruleImpact":1.3283,"groups":["SPEED"],"summary":{"format":"Properly
+        formatting and compressing images can save many bytes of data."},"urlBlocks":[{"header":{"format":"{{BEGIN_LINK}}Optimize
+        the following images{{END_LINK}} to reduce their size by {{SIZE_IN_BYTES}}
+        ({{PERCENTAGE}} reduction).","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/OptimizeImages"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"12.9KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"40%"}]},"urls":[{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/plugins/wpsocialite/lib/social-sprite.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"4KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"37%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://tamars.co.uk/wp/wp-content/uploads/2012/10/spine.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"3.5KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"51%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://tamars.co.uk/wp/wp-content/uploads/2012/10/21_C_Logo1-300x50.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"1.7KiB"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"20%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/img/icons_facebook.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"866B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"76%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/img/icons_google.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"824B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"66%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://www.tamars.co.uk/wp/wp-content/themes/commander/assets/img/icons_twitter.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"814B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"64%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://tamars.co.uk/wp/wp-content/uploads/2012/09/email.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"655B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"42%"}]}},{"result":{"format":"Losslessly
+        compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).","args":[{"type":"URL","key":"URL","value":"http://tamars.co.uk/wp/wp-content/uploads/2012/09/specialoffer.png"},{"type":"BYTES","key":"SIZE_IN_BYTES","value":"567B"},{"type":"PERCENTAGE","key":"PERCENTAGE","value":"35%"}]}}]}]},"PrioritizeVisibleContent":{"localizedRuleName":"Prioritize
+        visible content","ruleImpact":0.0,"groups":["SPEED"],"summary":{"format":"You
+        have the above-the-fold content properly prioritized. Learn more about {{BEGIN_LINK}}prioritizing
+        visible content{{END_LINK}}.","args":[{"type":"HYPERLINK","key":"LINK","value":"https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"}]}}}},"version":{"major":1,"minor":15}}'
+    http_version: 
+  recorded_at: Tue, 13 Oct 2015 12:58:40 GMT
+recorded_with: VCR 2.9.3

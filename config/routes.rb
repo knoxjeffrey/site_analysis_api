@@ -13,7 +13,11 @@ Rails.application.routes.draw do
 
       get 'users/sync', to: 'users#sync'
 
-      resources :projects, only: [:create, :show]
+      resources :projects, only: [:create, :show] do
+        member do
+          post '/run_page_speed_test', to: 'page_speed_results#create'
+        end
+      end
 
       root 'user_projects#index'
     end
