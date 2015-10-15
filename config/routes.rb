@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
       resources :projects, only: [:create, :show] do
         member do
+          resources :page_speed_results, only: [:index, :show]
           post '/run_page_speed_test', to: 'page_speed_results#create'
         end
       end

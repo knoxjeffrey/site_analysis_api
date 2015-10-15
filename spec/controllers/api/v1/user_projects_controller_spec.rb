@@ -27,6 +27,7 @@ describe Api::V1::UserProjectsController do
       end
 
       it "returns a 200 response code" do
+        get :index, format: :json
         expect(response.code).to eq("200")
       end
 

@@ -4,6 +4,95 @@ describe Api::V1::PageSpeedResultsController do
 
   before(:each) { request.headers['Accept'] = "application/vnd.marketplace.v1" }
 
+  describe "GET index" do
+
+    let!(:user) { Fabricate(:user) }
+    let!(:project) { Fabricate(:project) }
+    let!(:page_speed_result_1) { Fabricate(:page_speed_result, project: project) }
+    let!(:page_speed_result_2) { Fabricate(:page_speed_result, project: project) }
+
+    context "with a valid access token" do
+
+      let(:token) { double :acceptable? => true, :scopes => [:api],
+                    :resource_owner_id => user.id }
+
+      before do
+        allow(controller).to receive(:doorkeeper_token) {token}
+        get :index, id: project.id, format: :json
+      end
+
+      it "returns an array of results for the resuested project" do
+        page_speed_result_response = JSON.parse(response.body, symbolize_names: true)
+        expect(page_speed_result_response.first[:project_id]).to eq project.id
+        expect(page_speed_result_response.second[:project_id]).to eq project.id
+      end
+
+      it "returns an array of page speed results" do
+        page_speed_result_response = JSON.parse(response.body, symbolize_names: true)
+        expect(page_speed_result_response.first[:id]).to eq page_speed_result_1.id
+        expect(page_speed_result_response.second[:id]).to eq page_speed_result_2.id
+      end
+
+      it "returns a 200 response code" do
+        expect(response.code).to eq("200")
+      end
+
+    end
+
+    context "with an invalid access token" do
+
+      let(:token) { double :acceptable? => false, :scopes => [:api] }
+
+      it "returns a 401 response code" do
+        get :index, id: project.id, format: :json
+        expect(response.code).to eq("401")
+      end
+
+    end
+
+  end
+
+  describe "GET show" do
+
+    let!(:user) { Fabricate(:user) }
+    let!(:project) { Fabricate(:project) }
+    let!(:page_speed_result) { Fabricate(:page_speed_result, project: project) }
+
+    context "with a valid access token" do
+
+      let(:token) { double :acceptable? => true, :scopes => [:api],
+                    :resource_owner_id => user.id }
+
+      before do
+        allow(controller).to receive(:doorkeeper_token) {token}
+        get :show, id: page_speed_result.id, format: :json
+      end
+
+      it "returns a hash" do
+        page_speed_result_response = JSON.parse(response.body, symbolize_names: true)
+        expect(page_speed_result_response.class).to eq Hash
+      end
+
+      it "returns a hash with details of the page speed results" do
+        page_speed_result_response = JSON.parse(response.body, symbolize_names: true)
+        expect(page_speed_result_response[:id]).to eq page_speed_result.id
+      end
+
+    end
+
+    context "with an invalid access token" do
+
+      let(:token) { double :acceptable? => false, :scopes => [:api] }
+
+      it "returns a 401 response code" do
+        get :show, id: page_speed_result.id, format: :json
+        expect(response.code).to eq("401")
+      end
+
+    end
+
+  end
+
   describe "POST create" do
 
     let!(:user) { Fabricate(:user) }

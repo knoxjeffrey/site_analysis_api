@@ -4,6 +4,11 @@ module Api
 
     class PageSpeedResultsController < ApiController
 
+      def index
+        project = Project.find(params[:id])
+        render json: project.page_speed_results, status: 200
+      end
+
       def create
         @project = Project.find(params[:id])
         @page_speed_form = PageSpeedForm.new(page_speed_form_params)
@@ -11,6 +16,11 @@ module Api
         is_form_valid?
       rescue GooglePageSpeedAPI::RequestFailure => e
         render json: { errors: e.message }, status: 422
+      end
+
+      def show
+        page_speed_insight = PageSpeedResult.find(params[:id])
+        render json: page_speed_insight, status: 200
       end
 
       private
@@ -50,6 +60,8 @@ module Api
       def parse_error(error)
         if error.keys.first.to_s == "strategy"
           "You must select at least 1 of either mobile or desktop"
+        elsif error.keys.first.to_s == "site_address"
+          "You must enter a url"
         end
       end
 
