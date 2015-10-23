@@ -1,28 +1,7 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This API consumes the Google PageSpeed Insights service to measure the performance of a page on both mobile and desktop devices.  The results are stored to build up a picture of the performance of the page over time.
 
-Things you may want to cover:
+I used PAW (https://luckymarmot.com/paw) to document the API for requests and responses and the file can be found in the root of this repository.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+I'm currently just running this locally for development but I plan for the API to consume other services to help build up a profile of website performance.  The front end will be built with React.js and make use of data visualisation to allow both developers and clients to quickly get an overview of performance.
